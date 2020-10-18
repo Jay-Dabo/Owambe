@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "owambe"
+    }
+  },
+  "defaultProject": "owambe",
+  "cli": {
+    "analytics": false
+  }
 }
