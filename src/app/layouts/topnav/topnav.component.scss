@@ -6,11 +6,39 @@
 	-moz-box-shadow: 0 8px 6px -6px #999;
 	box-shadow: 0 8px 6px -6px #999;
 
-	.navbar-brand {
+	@media (max-width: 800px) {
+		padding: 5px 80px;
+	}
 
+	@media (max-width: 600px) {
+		padding: 5px 60px;
+	}
+
+	@media (max-width: 400px) {
+		padding: 5px 30px;
+	}
+
+	.navbar-brand {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 800px;
 	}
 
 	.navbar-collapse {
+		margin-left: 50px;
+
+		@media (max-width: 800px) {
+			margin-left: 40px;
+		}
+
+		@media (max-width: 600px) {
+			margin-left: 20px;
+		}
+
+		@media (max-width: 400px) {
+			margin-left: 10px;
+		}
+
 		.navbar-nav {
 			.nav-link {
 				font-size: 12px;
