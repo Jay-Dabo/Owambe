@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+.landing-image{
+	width: 100%;
+	text-align: center;
+	margin: 100px 0px 0px 0px;
+	position: relative;
+
+	h1 {
+		font-size: 80px;
+		font-weight: 800;
+		font-family: 'Raleway', sans-serif,
+	}
+}
+
+.fundraiser-search {
+	min-height: 30vh;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 15px;
+
+	form {
+		width: 100%;
+		max-width: 790px;
+
+		legend {
+			font-size: 20px;
+			color: #000000;
+			// font-weight: 800;
+			text-align: center;
+		}
+
+		.form-group {
+			width: 70%;
+			margin: 17px auto;
+
+			.input-group {
+				width: auto;
+
+				.form-control {
+					margin: 10px auto;
+					height: 50px;
+					font-size: 15px;
+					border-radius: 15px;
+				}
+
+				.search-button {
+					width: 70px;
+					display: -ms-flexbox;
+					display: flex;
+					-ms-flex-align: center;
+					  align-items: center;
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 100%;
+					background: transparent;
+					border: 0;
+					padding: 0;
+					cursor: pointer;
+					display: flex;
+					-ms-flex-pack: center;
+					  justify-content: center;
+					align-items: center;
+
+					svg {
+						fill: #333;
+						width: 40px;
+						height: 40px;
+						transition: all .2s ease-out, color .2s ease-out;
+					}
+
+					&:hover,
+					&:focus {
+						outline: 0;
+						box-shadow: none;
+						color: #545479;
+
+						svg {
+							fill: #000000;
+						}
+					}
+				}
+			}
+		}
+
+		// .suggestion-wrap {
+		// 	padding: 0 15px;
+
+		// 	span {
+		// 		display: inline-block;
+		// 		padding: 0 15px;
+		// 		line-height: 32px;
+		// 		color: #000000;
+		// 		border-radius: 16px;
+		// 		margin: auto;
+		// 	}
+		// }
+	}
+}
