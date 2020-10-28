@@ -8,7 +8,6 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { UserModule } from './user/user.module';
     AppRoutingModule,
     FontAwesomeModule,
     NgScrollbarModule,
-    UserModule,
     FormsModule
   ],
   providers: [],
