@@ -54,6 +54,10 @@ h2 {
 
 
 /* TABS */
+.nav-link {
+  cursor: pointer;
+}
+
 h2.inactive {
   color: #cccccc;
 }
@@ -61,6 +65,13 @@ h2.inactive {
 h2.active {
   color: #0d0d0d;
   border-bottom: 2px solid #5fbae9;
+}
+
+h1.heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 20px 0px 0px 0px;
 }
 
 

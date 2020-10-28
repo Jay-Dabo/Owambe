@@ -1,8 +1,8 @@
 <div class="wrapper fadeInDown">
 	<div id="formContent">
 		<!-- Tabs Titles -->
-		<h2 class="inactive underlineHover">Login</h2>
-		<h2 class="active">Register</h2>
+		<h2 class="nav-link inactive underlineHover" routerLink="../login">Login</h2>
+		<h2 class="nav-link active" routerLink="../register">Register</h2>
 		
 		<!-- Icon -->
 		<h1 class="heading">O W A M B E</h1>
@@ -12,9 +12,16 @@
 
 		<!-- Login Form -->
 		<form>
-			<input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-			<input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-			<input type="submit" class="fadeIn fourth" value="Log In">
+			<div class="form-group">
+				<input type="text" id="first_name" class="fadeIn second" name="first_name" placeholder="First Name">
+				<input type="text" id="other_names" class="fadeIn second" name="other_name" placeholder="Other Name(s)">
+				<input type="text" id="last_name" class="fadeIn third" name="last_name" placeholder="Last Name">
+				<input type="text" id="email_address" class="fadeIn fourth" name="email_address" placeholder="Email Address">
+				<input type="text" id="phone_number" class="fadeIn fifth" name="phone_number" placeholder="Phone Number">
+				<input type="text" id="password" class="fadeIn sixth" name="password" placeholder="password">
+				<input type="text" id="password_confirmation" class="fadeIn seventh" name="password_confirmation" placeholder="password_confirmation">
+				<input type="submit" class="fadeIn eight" value="Register">
+			</div>
 		</form>
 		
 		<!-- Remind Passowrd -->
