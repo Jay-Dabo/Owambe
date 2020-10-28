@@ -5,12 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { UserService } from 'src/app/shared/services';
+import { TokenInterceptorService } from 'src/app/shared/services';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,12 @@ import { UserService } from 'src/app/shared/services';
     NgScrollbarModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService,
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenInterceptorService,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule {
