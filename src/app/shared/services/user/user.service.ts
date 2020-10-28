@@ -5,16 +5,16 @@ import { environment } from 'src/environments/environment';
 
 
 @Injectable({ providedIn: 'root' })
-export class AccountService {
+export class UserService {
 
     constructor(private _http: HttpClient, private _router: Router) {}
 
     registerUser(user) {
-        return this._http.post<any>(`${environment.apiUrl}/authentication/register`, user)
+        return this._http.post<any>(`${environment.apiUrl}/user/register`, user)
     }
 
     loginUser(user) {
-        return this._http.post<any>(`${environment.apiUrl}/authentication/login`, user)
+        return this._http.post<any>(`${environment.apiUrl}/user/login`, user)
     }
 
     loggedIn() {
