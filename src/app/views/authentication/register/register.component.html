@@ -13,14 +13,30 @@
 		<!-- Login Form -->
 		<form>
 			<div class="form-group">
-				<input type="text" id="first_name" class="fadeIn second" name="first_name" placeholder="First Name">
+				<!-- <mat-select-country [(ngModel)]="registerUserData.country" name="country" class="fadeIn" required></mat-select-country> -->
+				<input [(ngModel)]="registerUserData.first_name" type="text" name="first_name" placeholder="First Name" class="fadeIn first" required>
+				<input [(ngModel)]="registerUserData.other_names" type="text" name="other_names" placeholder="Other Names" class="fadeIn second">
+				<input [(ngModel)]="registerUserData.last_name" type="text" name="last_name" placeholder="Last Name" class="fadeIn third" required>
+				<input [(ngModel)]="registerUserData.email" type="email" name="email" placeholder="Email Address" class="fadeIn fourth" required>
+				<input [(ngModel)]="registerUserData.country" type="text" name="country" placeholder="Country" class="fadeIn" required>
+				<input [(ngModel)]="registerUserData.phone_number" type="tel" name="phone_number" placeholder="Phone Number" class="fadeIn fifth" required>
+				<input [(ngModel)]="registerUserData.password" type="password" name="password" placeholder="Password" class="fadeIn sixth" required>
+				<input [(ngModel)]="registerUserData.password_confirmation" type="password" name="password_confirmation" placeholder="Password Confirmation" class="fadeIn seventh" required>
+				<input type="submit" (click)="registerUser()" class="fadeIn eight" value="Register">
+
+
+
+
+
+				<!-- <input type="text" id="first_name" class="fadeIn first" name="first_name" placeholder="First Name">
 				<input type="text" id="other_names" class="fadeIn second" name="other_name" placeholder="Other Name(s)">
 				<input type="text" id="last_name" class="fadeIn third" name="last_name" placeholder="Last Name">
+
 				<input type="text" id="email_address" class="fadeIn fourth" name="email_address" placeholder="Email Address">
 				<input type="text" id="phone_number" class="fadeIn fifth" name="phone_number" placeholder="Phone Number">
 				<input type="text" id="password" class="fadeIn sixth" name="password" placeholder="password">
 				<input type="text" id="password_confirmation" class="fadeIn seventh" name="password_confirmation" placeholder="password_confirmation">
-				<input type="submit" class="fadeIn eight" value="Register">
+				<input type="submit" class="fadeIn eight" value="Register"> -->
 			</div>
 		</form>
 		

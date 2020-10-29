@@ -12,9 +12,10 @@
 
 		<!-- Login Form -->
 		<form>
-			<input type="text" id="login" class="fadeIn second" name="login" placeholder="Email Address">
-			<input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-			<input type="submit" class="fadeIn fourth" value="Log In">
+			<span>Kindly check your email for your Account Number</span>
+			<input [(ngModel)]="loginUserData._id" type="text" name="_id" placeholder="Account Number" class="fadeIn first" required>
+			<input [(ngModel)]="loginUserData.password" type="password" name="password" placeholder="Password" class="fadeIn second" required>
+			<button (click)="clickFunctions()" [disabled]="!loginUserData._id || !loginUserData.password" type="button" class="fadeIn third">Login</button>
 		</form>
 		
 		<!-- Remind Passowrd -->
