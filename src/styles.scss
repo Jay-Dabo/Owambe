@@ -1,4 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-Light.ttf) format("truetype");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-Bold.ttf) format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-ExtraBold.ttf) format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/fonts/Raleway/Raleway-Black.ttf) format("truetype");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/assets/fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-Light.ttf) format("truetype");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(/assets/fonts/Poppins/Poppins-Black.ttf) format("truetype");
+	font-weight: 700;
+}
 
 label, select, option, input::placeholder, data {
 	font-family: 'Montserrat', sans-serif;
