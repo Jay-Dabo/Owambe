@@ -1,1 +1,14 @@
-<p>all works!</p>
+<div class="row">
+	<div class="col-md-3" *ngFor="let fundraiser of fundraisers">
+		<div class="card">
+			<div class="card-body">
+				<img class="text-center" src="/assets/images/donation-image.jpeg">
+				<h5 class="card-title">{{ fundraiser.title }}</h5>
+				<p class="card-text">{{ fundraiser.description | slice:0:150 }} ....</p>
+			</div>
+			<div class="card-footer">
+				<button>View & Donate</button>
+			</div>
+		</div>
+	</div>
+</div>
