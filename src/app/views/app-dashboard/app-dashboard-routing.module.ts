@@ -10,8 +10,7 @@ let routes: Routes = [
 	{ 
 		path: '', component: AppDashboardComponent,
 		children: [
-            { path: '', pathMatch: 'full', redirectTo: 'home' },
-            { path: 'home', component: HomeComponent },
+            { path: '', component: HomeComponent },
             { path: 'fundraisers', loadChildren: fundraiserModule }
 		]
 	}

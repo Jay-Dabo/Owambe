@@ -36,7 +36,7 @@ export class UserService {
     }
 
     getUsers() {
-        return this._http.get<any>(`${environment.apiUrl}/users/`)
+        return this._http.get<any>(`${environment.apiUrl}/users`)
     }
 
     updateUser(_id: string, user) {

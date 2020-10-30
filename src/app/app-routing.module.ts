@@ -5,9 +5,8 @@ const appDashboardModule = () => import('./views/app-dashboard/app-dashboard.mod
 const authenticationModule = () => import('./views/authentication/authentication.module').then(m => m.AuthenticationModule);
 
 let routes: Routes = [
-	{ path: '', redirectTo: 'owambe', pathMatch: 'full' },
-	{ path: 'owambe', loadChildren: appDashboardModule },
-	{ path: 'authentication', loadChildren: authenticationModule },
+	{ path: '', loadChildren: appDashboardModule },
+	{ path: 'authentication', loadChildren: authenticationModule }
 ]
 
 @NgModule({
